@@ -1,11 +1,23 @@
 # US International for Developer in X11
 
+Aka layout close to MacOS US International
+
 ## Why
 
 I just drop my Macbook to work on Manjaro Linux. So far I'm super happy with my setup. Except for the keyboard.
 
-As french, we need to put accents and modifier on some letters, which leads me to use US/International layout. Without dead-keys it sucks. With dead-keys, it sucks less, until you start working on development projects.
+English intl layout is not good:
+- The dead key version make the coding impossible, as you need to double key over `'`, `\``, `"` characters.
+- The non-dead key version allow you with altgr to create character like é. But what about Ê?
+- In my opinion, having `altgr` on the right is not very ergonomic. I like to keep my modifier over the left size of my
+  keyboard, while using the right side modifier for options.
 
-For example, `\`` (backtick) needs you to type backtick + space to print out. Same occurs with `'` quotes or `"` double-quote, etc etc...
+## Instructions
 
-This project is made to fix that, step by step
+Put the `.Xmodmap` file into your home directory. It should be taken in consideration at the next startup of your Xserver.
+
+If not starting automatically, or if you want to get the layout working now, just type:
+
+```bash
+xmodmap .Xmodmap
+```
