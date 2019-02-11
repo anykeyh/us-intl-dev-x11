@@ -4,7 +4,7 @@ Aka layout close to MacOS US International
 
 ## Why
 
-I just drop my Macbook to work on Manjaro Linux. So far I'm super happy with my setup. Except for the keyboard.
+I just switch from MacOS to Manjaro Linux. So far I'm super happy with my setup. Except for the keyboard.
 
 English intl layout is not good:
 - The dead key version make the coding impossible, as you need to double key over `'`, `\``, `"` characters.
