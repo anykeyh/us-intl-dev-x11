@@ -1,0 +1,9 @@
+!xmodmap:  up to 4 keys per modifier, (keycodes in parentheses):
+
+!mod1        Alt_L (0x40),  Meta_L (0xcd)
+!mod5        ISO_Level3_Shift (0x5c),  Alt_L (0xcb)
+
+clear Mod1
+clear Mod5
+add Mod1 = ISO_Level3_Shift Mode_switch
+add Mod5 = Alt_L Meta_L
