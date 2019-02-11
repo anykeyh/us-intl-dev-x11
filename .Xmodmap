@@ -1,9 +1,81 @@
 !xmodmap:  up to 4 keys per modifier, (keycodes in parentheses):
 
-!mod1        Alt_L (0x40),  Meta_L (0xcd)
-!mod5        ISO_Level3_Shift (0x5c),  Alt_L (0xcb)
+! Map AltGr to the left
+keycode 108 = Alt_R Meta_R
+add Mod1 = Alt_L Alt_R Meta_L Meta_R
 
-clear Mod1
-clear Mod5
-add Mod1 = ISO_Level3_Shift Mode_switch
-add Mod5 = Alt_L Meta_L
+!                                                 SHIFT                           ALTGR+SHFT
+!       CODE   NORM  SHIFT      ALTGR             ALTGR          ALTGR            NA                SHIFT+ALTGR
+
+keycode 10   = 1     exclam      exclamdown       onesuperior    exclamdown       onesuperior       onesuperior
+keycode 11   = 2     at          trademark        twosuperior    trademark        twosuperior       twosuperior
+keycode 12   = 3     numbersign  sterling         threesuperior  sterling         threesuperior     threesuperior
+keycode 13   = 4     dollar      currency         currency       currency         currency          currency
+keycode 14   = 5     percent     paragraph        paragraph      paragraph        paragraph         paragraph
+keycode 15   = 6     asciicircum dead_circumflex  onequarter     dead_circumflex  onequarter        onequarter
+keycode 16   = 7     ampersand   dead_ogonek      onehalf        dead_ogonek      ampersand         onehalf
+
+!                                                     SHIFT                                     ALTGR+SHFT
+!       CODE   NORM  SHIFT      ALTGR                 ALTGR                ALTGR                NA                   SHIFT+ALTGR
+keycode 17   = 8     asterisk   periodcentered        degree               periodcentered       degree               degree
+keycode 18   = 9     parenleft  leftsinglequotemark   leftdoublequotemark  leftsinglequotemark  leftdoublequotemark  leftdoublequotemark
+keycode 19   = 0     parenright rightsinglequotemark  rightdoublequotemark rightsinglequotemark rightdoublequotemark rightdoublequotemark
+
+!                                                         SHIFT                                     ALTGR+SHFT
+!       CODE   NORM    SHIFT        ALTGR                 ALTGR                ALTGR                NA                   SHIFT+ALTGR
+keycode 20   = minus   underscore   dead_macron	          emdash	             dead_macron          emdash	             emdash
+keycode 21   = equal	 plus	        notequal              plusminus	           notequal	            plusminus            plusminus
+
+!                                                         SHIFT                                     ALTGR+SHFT
+!       CODE   NORM    SHIFT        ALTGR                 ALTGR                ALTGR                NA                   SHIFT+ALTGR
+keycode 24   = q       Q	          oe                    OE                   oe                   OE                   OE
+keycode 25   = w       W            dead_abovedot 	      WonSign	             dead_abovedot	      WonSign	             WonSign
+keycode 26   = e       E            dead_acute            acute                dead_acute           acute                acute
+keycode 27   = r       R            registered            RupeeSign            registered           RupeeSign            registered
+keycode 28   = t       T            thorn                 THORN                thorn                THORN                THORN
+keycode 29   = y       Y            yen                   yen                  yen                  yen                  yen
+keycode 30   = u       U            dead_diaeresis        diaeresis            dead_diaeresis       diaeresis            diaeresis
+keycode 31   = i       I            i                     Iacute               iacute               Iacute               Iacute
+keycode 32   = o       O            oslash                Oslash               oslash               Oslash               Oslash
+keycode 33   = p       P            p                     PesetaSign           PesetaSign           PesetaSign           PesetaSign
+
+
+!                                                                 SHIFT                                     ALTGR+SHFT
+!       CODE   NORM           SHIFT         ALTGR                 ALTGR                ALTGR                NA                   SHIFT+ALTGR
+keycode 34   = bracketleft    braceleft     guillemotleft         guillemotleft        guillemotleft        guillemotleft        guillemotleft
+keycode 35   = bracketright   braceright    guillemotright        guillemotright       guillemotright       guillemotright       guillemotright
+
+!                                                                 SHIFT                                     ALTGR+SHFT
+!       CODE   NORM           SHIFT         ALTGR                 ALTGR                ALTGR                NA                   SHIFT+ALTGR
+keycode 38   = a              A             Greek_alpha           Greek_ALPHA          Greek_alpha          Greek_ALPHA          Greek_ALPHA
+keycode 39   = s              S             ssharp                section              ssharp               section              section
+keycode 40   = d              D             eth                   ETH                  eth                  ETH                  ETH
+keycode 41   = f              F             function              dead_belowdot        function             dead_belowdot        dead_belowdot
+keycode 42   = g              G             Greek_gamma           Greek_GAMMA          Greek_gamma          Greek_GAMMA          Greek_GAMMA
+keycode 43   = h              H             h                     H                    h                    H                    H
+keycode 44   = j              J             j                     J                    j                    J                    J
+keycode 45   = k              K             k                     K                    k                    K                    K
+keycode 46   = l              L             l                     L                    l                    L                    L
+keycode 47   = semicolon      colon         ellipsis              ellipsis             ellipsis             ellipsis             ellipsis
+keycode 48   = apostrophe     quotedbl      ae                    AE                   ae                   AE                   AE
+
+!                                                                 SHIFT                                     ALTGR+SHFT
+!       CODE   NORM           SHIFT         ALTGR                 ALTGR                ALTGR                NA                   SHIFT+ALTGR
+keycode 49   = grave          asciitilde    dead_grave            dead_tilde           dead_grave           dead_tilde          dead_tilde
+
+!                                                                 SHIFT                                     ALTGR+SHFT
+!       CODE   NORM           SHIFT         ALTGR                 ALTGR                ALTGR                NA                   SHIFT+ALTGR
+keycode 51   = backslash      bar           notsign               brokenbar            notsign              brokenbar            brokenbar
+keycode 52   = z              Z             dead_horn             dead_hook            dead_horn            dead_hook            dead_hook
+keycode 53   = x              X             dead_belowdot         dead_belowdot        dead_belowdot        dead_belowdot        dead_belowdot
+keycode 54   = c              C             dead_cedilla          dead_cedilla         dead_cedilla         dead_cedilla         dead_cedilla
+keycode 55   = v              V             opentribulletdown     opentribulletup      opentribulletdown    opentribulletup      opentribulletup
+
+!                                                                 SHIFT                                     ALTGR+SHFT
+!       CODE   NORM           SHIFT         ALTGR                 ALTGR                ALTGR                NA                   SHIFT+ALTGR
+keycode 56   = b              B             Greek_beta            Greek_BETA           Greek_beta           Greek_BETA           Greek_BETA
+keycode 57   = n              N             dead_tilde            asciitilde           dead_tilde           asciitilde           asciitilde
+keycode 58   = m              M             mu                    Greek_MU             mu                   Greek_MU             Greek_MU
+keycode 59   = comma          less          lessthanequal         multiply             lessthanequal        multiply             multiply
+keycode 60   = period         greater       greaterthanequal      division             greaterthanequal     division             division
+keycode 61   = slash          question      questiondown          question             question             question             question
