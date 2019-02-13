@@ -1,8 +1,12 @@
 !xmodmap:  up to 4 keys per modifier, (keycodes in parentheses):
 
 ! Map AltGr to the left
-keycode 108 = Alt_R Meta_R
-add Mod1 = Alt_L Alt_R Meta_L Meta_R
+keycode 108 = Alt_L Meta_L
+keycode 64 = ISO_Level3_Shift Alt_R Meta_R
+clear Mod5
+clear Mod1
+add Mod5 = Alt_R Meta_R ISO_Level3_Shift Mode_switch
+add Mod1 = Alt_L Meta_L
 
 !                                                 SHIFT                           ALTGR+SHFT
 !       CODE   NORM  SHIFT      ALTGR             ALTGR          ALTGR            NA                SHIFT+ALTGR
@@ -10,10 +14,10 @@ add Mod1 = Alt_L Alt_R Meta_L Meta_R
 keycode 10   = 1     exclam      exclamdown       onesuperior    exclamdown       onesuperior       onesuperior
 keycode 11   = 2     at          trademark        twosuperior    trademark        twosuperior       twosuperior
 keycode 12   = 3     numbersign  sterling         threesuperior  sterling         threesuperior     threesuperior
-keycode 13   = 4     dollar      currency         currency       currency         currency          currency
+keycode 13   = 4     dollar      EuroSign         currency       EuroSign         currency          currency
 keycode 14   = 5     percent     paragraph        paragraph      paragraph        paragraph         paragraph
 keycode 15   = 6     asciicircum dead_circumflex  onequarter     dead_circumflex  onequarter        onequarter
-keycode 16   = 7     ampersand   dead_ogonek      onehalf        dead_ogonek      ampersand         onehalf
+keycode 16   = 7     ampersand   dead_ogonek      onehalf        dead_ogonek      onehalf           onehalf
 
 !                                                     SHIFT                                     ALTGR+SHFT
 !       CODE   NORM  SHIFT      ALTGR                 ALTGR                ALTGR                NA                   SHIFT+ALTGR
@@ -78,4 +82,4 @@ keycode 57   = n              N             dead_tilde            asciitilde    
 keycode 58   = m              M             mu                    Greek_MU             mu                   Greek_MU             Greek_MU
 keycode 59   = comma          less          lessthanequal         multiply             lessthanequal        multiply             multiply
 keycode 60   = period         greater       greaterthanequal      division             greaterthanequal     division             division
-keycode 61   = slash          question      questiondown          question             question             question             question
+keycode 61   = slash          question      questiondown          questiondown         questiondown         questiondown         questiondown
