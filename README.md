@@ -1,6 +1,6 @@
 # US International for Developer in X11
 
-Aka layout inspired by OS/X US International layout, which is very confortable for French on QWERTY :-).
+Aka layout inspired by OS/X US International layout, which is very confortable for European non-english speakers on qwerty (US) layout :-).
 
 ## Why
 
